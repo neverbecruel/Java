@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="398.0" prefWidth="518.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.operadoresarit.HelloController">
+   <children>
+      <Label layoutX="70.0" layoutY="64.0" text="SOMA" />
+      <Label layoutX="70.0" layoutY="101.0" text="SUBTRAÇÃO" />
+      <Label layoutX="70.0" layoutY="134.0" text="MULTIPLICAÇÃO" />
+      <Label layoutX="70.0" layoutY="171.0" text="DIVISÃO" />
+      <Label layoutX="70.0" layoutY="210.0" text="INCREMENTO" />
+      <Label layoutX="70.0" layoutY="253.0" text="EXPONENCIAÇÃO" />
+      <TextField fx:id="soma1" layoutX="189.0" layoutY="60.0" prefHeight="25.0" prefWidth="61.0" promptText="0" text="0" />
+      <TextField fx:id="sub1" layoutX="189.0" layoutY="97.0" prefHeight="25.0" prefWidth="61.0" promptText="0" text="0" />
+      <TextField fx:id="multi1" layoutX="189.0" layoutY="130.0" prefHeight="25.0" prefWidth="61.0" promptText="0" text="0" />
+      <TextField fx:id="div1" layoutX="189.0" layoutY="167.0" prefHeight="25.0" prefWidth="61.0" promptText="0" text="0" />
+      <TextField fx:id="incremento" layoutX="243.0" layoutY="207.0" prefHeight="25.0" prefWidth="61.0" promptText="1" text="0" />
+      <TextField fx:id="base" layoutX="189.0" layoutY="249.0" prefHeight="25.0" prefWidth="61.0" promptText="1" text="0" />
+      <Button fx:id="calculasTodos" layoutX="133.0" layoutY="325.0" mnemonicParsing="false" onAction="#calculando" prefHeight="25.0" prefWidth="220.0" text="CALCULAR" />
+      <Label layoutX="269.0" layoutY="64.0" text="+" />
+      <Label layoutX="271.0" layoutY="101.0" text="-" />
+      <Label layoutX="271.0" layoutY="134.0" text="*" />
+      <Label layoutX="271.0" layoutY="171.0" text="/" />
+      <Label layoutX="332.0" layoutY="210.0" text="++" />
+      <Label layoutX="273.0" layoutY="253.0" text="^" />
+      <TextField fx:id="soma2" layoutX="301.0" layoutY="60.0" prefHeight="25.0" prefWidth="61.0" promptText="1" text="0" />
+      <TextField fx:id="sub2" layoutX="301.0" layoutY="97.0" prefHeight="25.0" prefWidth="61.0" promptText="0" text="0" />
+      <TextField fx:id="multi2" layoutX="301.0" layoutY="130.0" prefHeight="25.0" prefWidth="61.0" promptText="0" text="0" />
+      <TextField fx:id="div2" layoutX="301.0" layoutY="167.0" prefHeight="25.0" prefWidth="61.0" promptText="1" text="1" />
+      <TextField fx:id="expoente" layoutX="301.0" layoutY="249.0" prefHeight="25.0" prefWidth="61.0" promptText="1" text="0" />
+      <Label layoutX="386.0" layoutY="64.0" text="=" />
+      <Label layoutX="386.0" layoutY="101.0" text="=" />
+      <Label layoutX="386.0" layoutY="134.0" text="=" />
+      <Label layoutX="386.0" layoutY="171.0" text="=" />
+      <Label layoutX="386.0" layoutY="210.0" text="=" />
+      <Label layoutX="386.0" layoutY="253.0" text="=" />
+      <Label fx:id="lblSoma" layoutX="412.0" layoutY="64.0" text="0" />
+      <Label fx:id="lblSub" layoutX="412.0" layoutY="101.0" text="0" />
+      <Label fx:id="lblMulti" layoutX="412.0" layoutY="134.0" text="0" />
+      <Label fx:id="lblDiv" layoutX="412.0" layoutY="171.0" text="0" />
+      <Label fx:id="lblIncr" layoutX="412.0" layoutY="210.0" text="0" />
+      <Label fx:id="lblExpoe" layoutX="412.0" layoutY="253.0" text="0" />
+   </children>
+</AnchorPane>

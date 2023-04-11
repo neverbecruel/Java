@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.akinator.HelloController">
+   <children>
+      <ImageView fitHeight="286.0" fitWidth="343.0" layoutX="109.0" layoutY="-43.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@BALÃO.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="sim" fitHeight="273.0" fitWidth="264.0" layoutX="192.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@AKINATOR.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblAkinator" layoutX="164.0" layoutY="48.0" prefHeight="92.0" prefWidth="177.0" text="Estou pensando em um número entre 0 e 10, consegue adivinhar?" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Dubai Light" size="13.0" />
+         </font></Label>
+      <Label layoutX="73.0" layoutY="278.0" text="Valor" />
+      <Spinner fx:id="spinner" editable="true" layoutX="128.0" layoutY="274.0" prefHeight="25.0" prefWidth="54.0">
+              <valueFactory>
+                 <SpinnerValueFactory.IntegerSpinnerValueFactory amountToStepBy="1" max="10" min="0" />
+              </valueFactory>
+      </Spinner>
+      <Button fx:id="btnChute" layoutX="83.0" layoutY="322.0" mnemonicParsing="false" onAction="#eoChutas" prefHeight="35.0" prefWidth="91.0" text="Palpite" />
+   </children>
+</AnchorPane>
